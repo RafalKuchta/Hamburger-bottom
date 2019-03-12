@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 150vh;
+}
+
+.wrapp {
+    margin: 20px 90px;
+}
+
+nav {
+    position: fixed;
+    bottom: -270px;
+    right: 0;
+    height: 300px;
+    width: 100%;
+    background-color: #000;
+    transition: .5s;
+}
+
+p {
+    line-height: 30px;
+}
+
+nav.on {
+    bottom: 0;
+}
+
+.arrow {
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+    height: 40px;
+    width: 40px;
+    border: 2px solid black;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 30px;
+    color: white;
+    background-color: #000;
+    transition: .5s;
+}
+
+.arrow.on {
+    bottom: 320px;
+}
+
+i {
+    transition: .5s;
+}
+
+i.on {
+    transform: rotate(-180deg);
+}
